@@ -7,7 +7,7 @@ export default function About() {
               About Me
             </h2>
             <p className="mt-4 max-w-2xl mx-auto text-xl text-gray-500">
-              I'm a Computer Science student at the National University of Singapore,
+              I&apos;m a Computer Science student at the National University of Singapore,
               focusing on Artificial Intelligence with a minor in Mathematics and Data Analytics.
               Currently maintaining a GPA of 4.9/5.0 with Highest Distinction.
             </p>
