@@ -1,19 +1,27 @@
 'use client'
 
 import { useState } from 'react'
-import Link from 'next/link'
 import { FaBars, FaTimes } from 'react-icons/fa'
-import { NavItem } from '@/types'
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState<boolean>(false)
 
-  const navItems: NavItem[] = [
-    { name: 'Home', path: '/' },
-    { name: 'About', path: '/about' },
-    { name: 'Experience', path: '/experience' },
-    { name: 'Projects', path: '/projects' },
-    { name: 'Contact', path: '/contact' },
+  const scrollToSection = (sectionId: string) => {
+    const element = document.getElementById(sectionId)
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' })
+      setIsOpen(false)
+    }
+  }
+
+  const navItems = [
+    { name: 'Home', id: 'hero' },
+    { name: 'About', id: 'about' },
+    { name: 'Education', id: 'education' },
+    { name: 'Experience', id: 'experience' },
+    { name: 'Projects', id: 'projects' },
+    { name: 'Skills', id: 'skills' },
+    { name: 'Awards', id: 'awards' },
   ]
 
   return (
@@ -21,21 +29,24 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-16">
           <div className="flex-shrink-0 flex items-center">
-            <Link href="/" className="text-xl font-bold">
+            <button
+              onClick={() => scrollToSection('hero')}
+              className="text-xl font-bold text-gray-900 hover:text-indigo-600"
+            >
               Samuel Then
-            </Link>
+            </button>
           </div>
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
             {navItems.map((item) => (
-              <Link
+              <button
                 key={item.name}
-                href={item.path}
-                className="text-gray-600 hover:text-gray-900 transition-colors"
+                onClick={() => scrollToSection(item.id)}
+                className="text-gray-600 hover:text-indigo-600 transition-colors"
               >
                 {item.name}
-              </Link>
+              </button>
             ))}
           </div>
 
@@ -56,14 +67,13 @@ export default function Navbar() {
           <div className="md:hidden">
             <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
               {navItems.map((item) => (
-                <Link
+                <button
                   key={item.name}
-                  href={item.path}
-                  className="block px-3 py-2 text-gray-600 hover:text-gray-900"
-                  onClick={() => setIsOpen(false)}
+                  onClick={() => scrollToSection(item.id)}
+                  className="block w-full text-left px-3 py-2 text-gray-600 hover:text-indigo-600"
                 >
                   {item.name}
-                </Link>
+                </button>
               ))}
             </div>
           </div>
