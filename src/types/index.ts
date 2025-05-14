@@ -9,6 +9,7 @@ export interface NavItem {
     location: string;
     duration: string;
     description: string[];
+    image: string;
   }
   
   export interface Education {

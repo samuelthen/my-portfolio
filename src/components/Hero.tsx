@@ -2,7 +2,7 @@ import Image from 'next/image'
 
 export default function Hero() {
   return (
-    <div className="bg-gradient-to-r from-blue-50 to-indigo-50 py-20">
+    <div id = "hero" className="bg-gradient-to-r from-blue-50 to-indigo-50 py-20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col md:flex-row items-center justify-between gap-12">
           <div className="flex-1 text-center md:text-left">
