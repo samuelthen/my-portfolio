@@ -1,23 +1,23 @@
-import { Skill } from '@/types'
+// import { Skill } from '@/types'
 
-const skills: Skill[] = [
-  {
-    category: "Programming Languages",
-    items: ["Python", "Java", "JavaScript", "TypeScript", "C"]
-  },
-  {
-    category: "AI & ML",
-    items: ["LLM (OpenAI & Claude)", "TensorFlow", "PyTorch", "OpenCV", "SpaCy"]
-  },
-  {
-    category: "Web Frameworks",
-    items: ["Node.js", "React.js", "Next.js", "FastAPI"]
-  },
-  {
-    category: "Cloud & Automation",
-    items: ["AWS Cloud Foundations", "Workato Automation Pro"]
-  }
-]
+// const skills: Skill[] = [
+//   {
+//     category: "Programming Languages",
+//     items: ["Python", "Java", "JavaScript", "TypeScript", "C"]
+//   },
+//   {
+//     category: "AI & ML",
+//     items: ["LLM (OpenAI & Claude)", "TensorFlow", "PyTorch", "OpenCV", "SpaCy"]
+//   },
+//   {
+//     category: "Web Frameworks",
+//     items: ["Node.js", "React.js", "Next.js", "FastAPI"]
+//   },
+//   {
+//     category: "Cloud & Automation",
+//     items: ["AWS Cloud Foundations", "Workato Automation Pro"]
+//   }
+// ]
 
 export default function Skills() {
   return (

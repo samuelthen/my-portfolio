@@ -1,19 +1,19 @@
-import type { Education as EducationType } from '@/types'
+// import type { Education as EducationType } from '@/types'
 
-const education: EducationType[] = [
-  {
-    school: "National University of Singapore",
-    degree: "Bachelor of Computing in Computer Science",
-    duration: "Aug 2023 - Present",
-    gpa: "4.9/5.0",
-    details: [
-      "Concentration in Artificial Intelligence (AI)",
-      "Minor in Mathematics and Data Analytics",
-      "Selected as Teaching Assistant for Programming Methodology",
-      "Selected to join NUS Overseas Colleges Programme in Indonesia"
-    ]
-  }
-]
+// const education: EducationType[] = [
+//   {
+//     school: "National University of Singapore",
+//     degree: "Bachelor of Computing in Computer Science",
+//     duration: "Aug 2023 - Present",
+//     gpa: "4.9/5.0",
+//     details: [
+//       "Concentration in Artificial Intelligence (AI)",
+//       "Minor in Mathematics and Data Analytics",
+//       "Selected as Teaching Assistant for Programming Methodology",
+//       "Selected to join NUS Overseas Colleges Programme in Indonesia"
+//     ]
+//   }
+// ]
 
 export default function Education() {
   return (

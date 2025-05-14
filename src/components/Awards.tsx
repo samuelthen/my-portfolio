@@ -17,7 +17,7 @@ export default function Awards() {
             </div>
             <div className="border-t border-gray-200 px-4 py-5 sm:px-6">
               <ul className="list-disc pl-5 space-y-2">
-                <li className="text-gray-600">Dean's List AY 23/24 Semester 2 (GPA 5.0/5.0)</li>
+                <li className="text-gray-600">Deans List AY 23/24 Semester 2 (GPA 5.0/5.0)</li>
                 <li className="text-gray-600">IMDA SG Digital Young Leader</li>
               </ul>
             </div>
