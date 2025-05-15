@@ -6,15 +6,15 @@ export default function About() {
             <h2 className="text-3xl font-extrabold text-gray-900 sm:text-4xl">
               About Me
             </h2>
-            <p className="mt-4 max-w-2xl mx-auto text-xl text-gray-500">
-              I&apos;m a Computer Science student at the National University of Singapore,
-              focusing on Artificial Intelligence with a minor in Mathematics and Data Analytics.
-              Currently maintaining a GPA of 4.9/5.0 with Highest Distinction.
+            <p className="mt-4 max-w-2xl mx-auto text-lg text-gray-500">
+              What gets me up in the morning isn&apos;t a love for tech slogans - it&apos;s the work itself. 
+              I like hard problems, systems that break, models that don&apos;t converge, edge cases that don&apos;t behave. 
+              I like understanding things properly and building things that don&apos;t fall apart.
             </p>
-            <div className="mt-8">
-              <h3 className="text-lg font-semibold text-gray-900">Languages</h3>
-              <p className="mt-2 text-gray-500">English & Chinese (Native), Malay & Indonesian</p>
-            </div>
+            <p className="mt-4 max-w-2xl mx-auto text-lg text-gray-500">
+              Whether it's tuning a model, writing a cleaner abstraction, or debugging something for hours - I enjoy the process. 
+              It's not about chasing perfection, it's about getting sharper every day. That&apos;s what keeps me going.
+            </p>
           </div>
         </div>
       </section>

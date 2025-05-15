@@ -1,5 +1,39 @@
 import Image from 'next/image'
 
+type Project = {
+  title: string
+  subtitle: string
+  description: string
+  image: string
+}
+
+const projects: Project[] = [
+  {
+    title: "Sarcasm Detection with Contrastive Learning",
+    subtitle: "School AI Project (CS4248)",
+    description: "Designed and implemented a sarcasm classification model by fine-tuning BERT with contrastive learning. Used Distance Weighted Sampling and linguistic features to improve classification accuracy, achieving a Macro F1 score of 0.938 on a Kaggle dataset.",
+    image: "/images/sarcasmproject.png"
+  },  
+  {
+    title: "NER Labeling Platform",
+    subtitle: "Personal Project",
+    description: "Built a cloud-based platform for NLP dataset annotation using Supabase, FastAPI & Next.js",
+    image: "/images/nerproject.png"
+  },
+  {
+    title: "Generative AI-Powered Digital Personal Assistant",
+    subtitle: "Hackathon Project",
+    description: "Built full-stack application using Firebase & Next.js, integrating LLM-based email summarization and task automation",
+    image: "/images/paproject.png"
+  },
+  {
+    title: "Bakery Business Management System",
+    subtitle: "School SWE Project (CS2103T)",
+    description: "Developed a Java standalone application, applying OOP MVC design patterns, SOLID principles & JUnit testing",
+    image: "/images/bakeryproject.png"
+  }
+]
+
 export default function Projects() {
   return (
     <section id="projects" className="py-20 bg-white">
@@ -9,83 +43,34 @@ export default function Projects() {
             Projects
           </h2>
         </div>
-        <div className="mt-12 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-          {/* NLP Labeling Platform */}
-          <div className="bg-white shadow overflow-hidden sm:rounded-lg">
-            <div className="relative h-48 w-full">
-              <Image
-                src="/placeholder-project.jpg"
-                alt="NLP Labeling Platform"
-                fill
-                className="object-cover"
-              />
+        <div className="mt-12 grid gap-8 sm:grid-cols-1 md:grid-cols-2">
+          {projects.map((project, index) => (
+            <div key={index} className="bg-white shadow overflow-hidden sm:rounded-lg">
+              <div className="relative h-64 w-full">
+                <Image
+                  src={project.image}
+                  alt={project.title}
+                  fill
+                  className="object-cover"
+                />
+              </div>
+              <div className="px-4 py-5 sm:px-6">
+                <h3 className="text-lg leading-6 font-medium text-gray-900">
+                  {project.title}
+                </h3>
+                <p className="mt-1 max-w-2xl text-sm text-gray-500">
+                  {project.subtitle}
+                </p>
+              </div>
+              <div className="border-t border-gray-200 px-4 py-5 sm:px-6">
+                <p className="text-gray-600">
+                  {project.description}
+                </p>
+              </div>
             </div>
-            <div className="px-4 py-5 sm:px-6">
-              <h3 className="text-lg leading-6 font-medium text-gray-900">
-                NLP Labeling Platform
-              </h3>
-              <p className="mt-1 max-w-2xl text-sm text-gray-500">
-                Personal Project
-              </p>
-            </div>
-            <div className="border-t border-gray-200 px-4 py-5 sm:px-6">
-              <p className="text-gray-600">
-                Built a cloud-based platform for NLP dataset annotation using Supabase, FastAPI & Next.js
-              </p>
-            </div>
-          </div>
-
-          {/* Generative AI-Powered Digital Personal Assistant */}
-          <div className="bg-white shadow overflow-hidden sm:rounded-lg">
-            <div className="relative h-48 w-full">
-              <Image
-                src="/placeholder-project.jpg"
-                alt="Generative AI-Powered Digital Personal Assistant"
-                fill
-                className="object-cover"
-              />
-            </div>
-            <div className="px-4 py-5 sm:px-6">
-              <h3 className="text-lg leading-6 font-medium text-gray-900">
-                Generative AI-Powered Digital Personal Assistant
-              </h3>
-              <p className="mt-1 max-w-2xl text-sm text-gray-500">
-                Hackathon Project
-              </p>
-            </div>
-            <div className="border-t border-gray-200 px-4 py-5 sm:px-6">
-              <p className="text-gray-600">
-                Built full-stack application using Firebase & Next.js, integrating LLM-based email summarization and task automation
-              </p>
-            </div>
-          </div>
-
-          {/* Bakery Business Management System */}
-          <div className="bg-white shadow overflow-hidden sm:rounded-lg">
-            <div className="relative h-48 w-full">
-              <Image
-                src="/placeholder-project.jpg"
-                alt="Bakery Business Management System"
-                fill
-                className="object-cover"
-              />
-            </div>
-            <div className="px-4 py-5 sm:px-6">
-              <h3 className="text-lg leading-6 font-medium text-gray-900">
-                Bakery Business Management System
-              </h3>
-              <p className="mt-1 max-w-2xl text-sm text-gray-500">
-                School Project
-              </p>
-            </div>
-            <div className="border-t border-gray-200 px-4 py-5 sm:px-6">
-              <p className="text-gray-600">
-                Developed a Java standalone application, applying OOP MVC design patterns, SOLID principles & JUnit testing
-              </p>
-            </div>
-          </div>
+          ))}
         </div>
       </div>
     </section>
   )
-} 
+}

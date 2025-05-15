@@ -2,6 +2,13 @@
 
 import { useState } from 'react'
 import { FaBars, FaTimes } from 'react-icons/fa'
+import { Playfair_Display } from 'next/font/google'
+
+const playfair = Playfair_Display({
+  subsets: ['latin'],
+  weight: ['600'], 
+  style: ['italic'],
+})
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState<boolean>(false)
@@ -31,7 +38,7 @@ export default function Navbar() {
           <div className="flex-shrink-0 flex items-center">
             <button
               onClick={() => scrollToSection('hero')}
-              className="text-xl font-bold text-gray-900 hover:text-indigo-600"
+              className={`text-2xl text-gray-900 hover:text-indigo-600 italic ${playfair.className}`}
             >
               Samuel Then
             </button>
