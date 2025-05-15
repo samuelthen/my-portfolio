@@ -12,7 +12,7 @@ const experiences: ExperienceType[] = [
       "Developed custom web vulnerability scanning tools and implemented 50 scan rules; improved penetration testing tool development efficiency by 150%",
       "Collaborated with Indonesian interns, researching and architecting in-house Cyber Threat Intelligence tools; accelerated launch timeline by 3 months"
     ],
-    image: "/images/cyberarmy.png"
+    image: "/images/cyberarmy.jpeg"
   },
   {
     title: "Software Engineer Intern",
@@ -22,7 +22,7 @@ const experiences: ExperienceType[] = [
     description: [
       "Collaborated with NUS student interns, integrating computer vision and large language models (LLM) into smart glasses systems; improved user feedback rating by 30%"
     ],
-    image: "/images/ssi.png"
+    image: "/images/ssi.jpeg"
   },
   {
     title: "Software Engineer Intern",
@@ -33,7 +33,7 @@ const experiences: ExperienceType[] = [
       "Deployed named entity recognition in information extraction workflow; enhanced system accuracy by 30%",
       "Engineered an automation pipeline for document processing and translation for financial documents; enhanced client's satisfaction by 50%"
     ],
-    image: "/images/rajang.png"
+    image: "/images/rajang.jpeg"
   }
 ]
 
