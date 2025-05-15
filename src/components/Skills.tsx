@@ -1,23 +1,27 @@
-// import { Skill } from '@/types'
+import type { Skill } from '@/types'
 
-// const skills: Skill[] = [
-//   {
-//     category: "Programming Languages",
-//     items: ["Python", "Java", "JavaScript", "TypeScript", "C"]
-//   },
-//   {
-//     category: "AI & ML",
-//     items: ["LLM (OpenAI & Claude)", "TensorFlow", "PyTorch", "OpenCV", "SpaCy"]
-//   },
-//   {
-//     category: "Web Frameworks",
-//     items: ["Node.js", "React.js", "Next.js", "FastAPI"]
-//   },
-//   {
-//     category: "Cloud & Automation",
-//     items: ["AWS Cloud Foundations", "Workato Automation Pro"]
-//   }
-// ]
+const skills: Skill[] = [
+  {
+    category: "Programming Languages",
+    items: ["Python", "Java", "JavaScript", "TypeScript"]
+  },
+  {
+    category: "AI & ML",
+    items: ["LLM (OpenAI & Claude)", "TensorFlow", "PyTorch", "OpenCV", "SpaCy", "YOLO", "MLOps"]
+  },
+  {
+    category: "Web Frameworks",
+    items: ["Node.js", "React.js", "Next.js", "FastAPI"]
+  },
+  {
+    category: "Cloud & Automation",
+    items: ["AWS Cloud Foundations", "Workato Automation Pro"]
+  },
+  {
+    category: "Languages",
+    items: ["English & Chinese (Native)", "Malay & Indonesian"]
+  }
+]
 
 export default function Skills() {
   return (
@@ -37,36 +41,17 @@ export default function Skills() {
             </div>
             <div className="border-t border-gray-200">
               <dl>
-                <div className="bg-gray-50 px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
-                  <dt className="text-sm font-medium text-gray-500">Programming Languages</dt>
-                  <dd className="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2">
-                    Python, Java, JavaScript, TypeScript, C
-                  </dd>
-                </div>
-                <div className="bg-white px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
-                  <dt className="text-sm font-medium text-gray-500">AI & ML</dt>
-                  <dd className="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2">
-                    LLM (OpenAI & Claude), TensorFlow, PyTorch, OpenCV, SpaCy, YOLO, MLOps
-                  </dd>
-                </div>
-                <div className="bg-gray-50 px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
-                  <dt className="text-sm font-medium text-gray-500">Web Frameworks</dt>
-                  <dd className="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2">
-                    Node.js, React.js, Next.js, FastAPI
-                  </dd>
-                </div>
-                <div className="bg-white px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
-                  <dt className="text-sm font-medium text-gray-500">Cloud & Automation</dt>
-                  <dd className="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2">
-                    AWS Cloud Foundations, Workato Automation Pro
-                  </dd>
-                </div>
-                <div className="bg-gray-50 px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
-                  <dt className="text-sm font-medium text-gray-500">Languages</dt>
-                  <dd className="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2">
-                    English & Chinese (Native), Malay & Indonesian
-                  </dd>
-                </div>
+                {skills.map((skill, index) => (
+                  <div
+                    key={index}
+                    className={`${index % 2 === 0 ? 'bg-gray-50' : 'bg-white'} px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6`}
+                  >
+                    <dt className="text-sm font-medium text-gray-500">{skill.category}</dt>
+                    <dd className="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2">
+                      {skill.items.join(', ')}
+                    </dd>
+                  </div>
+                ))}
               </dl>
             </div>
           </div>

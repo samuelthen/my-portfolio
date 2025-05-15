@@ -50,12 +50,12 @@ export default function Experience() {
           {experiences.map((exp, index) => (
             <div key={index} className="bg-white shadow overflow-hidden sm:rounded-lg">
               <div className="flex flex-col md:flex-row">
-                <div className="relative h-48 md:h-auto md:w-1/3">
+                <div className="relative w-64 h-64 flex-shrink-0">
                   <Image
                     src={exp.image}
                     alt={exp.company}
                     fill
-                    className="object-cover"
+                    className="object-cover rounded-t md:rounded-l md:rounded-t-none"
                   />
                 </div>
                 <div className="flex-1">
