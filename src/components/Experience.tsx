@@ -4,6 +4,16 @@ import Image from 'next/image'
 
 const experiences: ExperienceType[] = [
   {
+    title: "Software Engineer Intern",
+    company: "Central Provident Fund Board (CPFB)",
+    location: "Singapore",
+    duration: "May 2025 - Aug 2025",
+    description: [
+      "Ongoing"
+    ],
+    image: "/images/cpf.png"
+  },
+  {
     title: "Cybersecurity Engineer Intern",
     company: "Cyber Army Indonesia",
     location: "Bandung, Indonesia",

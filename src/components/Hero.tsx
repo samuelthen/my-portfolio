@@ -1,21 +1,36 @@
-import Image from 'next/image'
+'use client';
+
+import Image from 'next/image';
+import { Typewriter } from 'react-simple-typewriter';
 
 export default function Hero() {
   return (
-    <div id = "hero" className="bg-gradient-to-r from-blue-50 to-indigo-50 py-20">
+    <div id="hero" className="bg-gradient-to-r from-blue-50 to-indigo-50 py-20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col md:flex-row items-center justify-between gap-0">
           <div className="flex-1 text-center md:text-left">
-            <h2 className="text-4xl tracking-tight font-semibold text-gray-800 sm:text-3xl md:text-3xl">
+            <h2 className="text-3xl tracking-tight font-semibold text-gray-800 sm:text-3xl md:text-3xl">
               <span className="block">Hi, I&apos;m Samuel Then</span>
             </h2>
-            <h1 className="mt-2 text-4xl tracking-tight font-extrabold text-indigo-600 sm:text-5xl md:text-6xl leading-tight">
-              <span className="block">Building reliable systems with intelligence and intent.</span>
+            <h1 className="mt-2 text-4xl tracking-tight font-extrabold text-indigo-600 sm:text-4xl md:text-4xl leading-tight min-h-[80px]">
+              <Typewriter
+                words={[
+                  'Building reliable systems.',
+                  'Designing intelligent tools.',
+                  'Solving real-world problems.',
+                ]}
+                loop={0}
+                cursor
+                cursorStyle="|"
+                typeSpeed={70}
+                deleteSpeed={50}
+                delaySpeed={1500}
+              />
             </h1>
             <p className="mt-3 max-w-md mx-auto text-base text-gray-500 sm:text-lg md:mt-5 md:text-xl md:max-w-3xl">
               I'm a Computer Science student at NUS with a focus on AI, data, and systems. 
               I enjoy designing solutions that are efficient, scalable, and grounded in real-world impact.
-              I value clean abstractions, sharp tools, and continuous learning - both in code and beyond.
+              I value clean abstractions, sharp tools, and continuous learning – both in code and beyond.
             </p>
           </div>
           <div className="flex-1 flex justify-center">
@@ -32,5 +47,5 @@ export default function Hero() {
         </div>
       </div>
     </div>
-  )
+  );
 }
