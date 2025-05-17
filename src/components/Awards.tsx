@@ -9,6 +9,12 @@ type Award = {
 
 const awards: Award[] = [
   {
+    title: "2nd Place at NUS STePS 26",
+    subtitle: "School of Computing Term Project Showcase",
+    description: "Awarded 2nd place for project presentation at NUS STePS 26 among peers and industry professionals.",
+    image: "/images/stepscert.png"
+  },
+  {
     title: "Deans List AY 23/24 Semester 2",
     subtitle: "NUS School of Computing",
     description: "Awarded for achieving a perfect GPA of 5.0/5.0 for the semester.",

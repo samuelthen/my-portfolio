@@ -35,6 +35,39 @@ const blogPosts: BlogPost[] = [
       "Attended Jane Street’s pre-application networking dinner — a valuable session filled with insights on their unique work culture and hiring process.",
     image: '/images/130525-1.png',
   },
+  {
+    id: 'nus-steps-26',
+    title: '2nd Place at NUS STePS 26',
+    date: 'April 16, 2025',
+    caption:
+      'Achieved 2nd place at the 26th NUS School of Computing Term Project Showcase (STePS), presenting our project to industry professionals and peers.',
+    image: '/images/160425.jpg',
+  },
+  {
+    id: 'nus-golf-farewell',
+    title: 'NUS Golf Farewell Session',
+    date: 'April 9, 2025',
+    caption:
+      "Organized in the NUS Golf farewell session, marking the end of an enriching journey with the university's golf community.",
+    image: '/images/090425.jpg',
+  },
+  {
+    id: 'grab-hackfest-2025',
+    title: 'Participated in Grab Hackfest 2025',
+    date: 'March 21, 2025',
+    caption:
+      'Joined Grab Hackfest 2025 organized by NTU, where we brainstormed product solutions to address challenges in Southeast Asia. A great learning and networking opportunity.',
+    image: '/images/210325.png',
+  },
+  {
+    id: 'wtt-singapore-challenge',
+    title: 'Competed in WTT Singapore Community Challenge',
+    date: 'February 6, 2025',
+    caption:
+      'Took part in the WTT Singapore Smash Community Challenge at Kallang Wave Mall, showcasing skills and sportsmanship in table tennis.',
+    image: '/images/060225.jpg',
+  },
+  
 ];
 
 export default function BlogPage() {

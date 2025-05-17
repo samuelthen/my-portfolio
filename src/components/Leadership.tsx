@@ -14,7 +14,7 @@ const leadershipRoles: LeadershipExperience[] = [
     title: "Event Director",
     company: "NUS Golf Club",
     location: "Singapore",
-    duration: "Aug 2024 - Present",
+    duration: "Aug 2024 - May 2025",
     description: [
       "Spearheading event planning and logistics for golf tournaments and networking sessions.",
       "Increased member participation by 40% through strategic outreach and collaborations."
@@ -25,12 +25,24 @@ const leadershipRoles: LeadershipExperience[] = [
     title: "Interest Group Leader",
     company: "Pioneer House Table Tennis IG",
     location: "NUS, Singapore",
-    duration: "Jan 2024 - Present",
+    duration: "Jan 2024 - May 2025",
     description: [
       "Organized regular training sessions and friendly competitions.",
       "Built a community of over 50 residents participating actively in events."
     ],
     image: "/images/ph.jpeg"
+  },
+  {
+    title: "Teaching Assistant",
+    company: "CS1101S – Programming Methodology",
+    location: "NUS School of Computing",
+    duration: "Aug 2024 – Nov 2024",
+    description: [
+      "Facilitated weekly studio sessions for first-year Computer Science students, guiding them through functional programming concepts using the Source language.",
+      "Provided individualized feedback on assignments and missions, contributing to a high student satisfaction rating of 4.9/5.0.",
+      "Collaborated with the teaching team to enhance course materials and improve the learning experience."
+    ],
+    image: "/images/nussoc.jpg"
   },
   {
     title: "Co-Founder",

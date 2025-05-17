@@ -36,7 +36,7 @@ export default function Footer() {
               <FaLinkedin className="mr-2" /> LinkedIn
             </a>
           </div>
-          <p className="mt-8 text-gray-400">© 2024 Samuel Then Shi Jie. All rights reserved.</p>
+          <p className="mt-8 text-gray-400">© 2025 Samuel Then Shi Jie. All rights reserved.</p>
         </div>
       </div>
     </footer>

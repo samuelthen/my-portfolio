@@ -11,7 +11,7 @@ type EducationType = {
 
 const educations: EducationType[] = [
   {
-    institution: "National University of Singapore",
+    institution: "National University of Singapore (NUS)",
     degree: "Bachelor of Computing in Computer Science",
     gpa: "GPA: 4.9/5.0 (Highest Distinction)",
     duration: "Aug 2023 – Dec 2026",
