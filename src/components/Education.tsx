@@ -22,17 +22,17 @@ const educations: EducationType[] = [
       "Selected as a Teaching Assistant for Programming Methodology (4.9/5.0 student rating), and joined the NUS Overseas Colleges Programme in Indonesia to develop entrepreneurial experience."
     ]
   },
-  {
-    institution: "University of Washington (UW), Seattle",
-    degree: "Student Exchange Programme",
-    gpa: "",
-    duration: "Sep 2025 – Dec 2025",
-    image: "/images/uw.png", 
-    description: [
-      "Selected for NUS Overseas Exchange Programme to broaden academic and cultural experience in a U.S. research-intensive environment.",
-      "Engaged with peers and faculty in courses related to systems, data science, and innovation at UW's Paul G. Allen School of Computer Science & Engineering."
-    ]
-  },
+  // {
+  //   institution: "University of Washington (UW), Seattle",
+  //   degree: "Student Exchange Programme",
+  //   gpa: "",
+  //   duration: "Sep 2025 – Dec 2025",
+  //   image: "/images/uw.png", 
+  //   description: [
+  //     "Selected for NUS Overseas Exchange Programme to broaden academic and cultural experience in a U.S. research-intensive environment.",
+  //     "Engaged with peers and faculty in courses related to systems, data science, and innovation at UW's Paul G. Allen School of Computer Science & Engineering."
+  //   ]
+  // },
   {
     institution: "NUS Overseas Colleges (Indonesia)",
     degree: "Entrepreneurship Programme",
