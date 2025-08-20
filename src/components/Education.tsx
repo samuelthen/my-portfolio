@@ -12,14 +12,16 @@ type EducationType = {
 const educations: EducationType[] = [
   {
     institution: "National University of Singapore (NUS)",
-    degree: "Bachelor of Computing in Computer Science",
-    gpa: "GPA: 4.9/5.0 (Highest Distinction)",
-    duration: "Aug 2023 – Dec 2026",
+    degree: "Bachelor of Computing (Honours) in Computer Science, Second Major in Mathematics",
+    gpa: "GPA: 4.88/5.0 (Highest Distinction)",
+    duration: "Aug 2023 – May 2027",
     image: "/images/nus.png",
     description: [
-      "Specialized in Artificial Intelligence, with a Minor in Mathematics and Data Analytics.",
-      "Completed coursework in Software Engineering and Natural Language Processing.",
-      "Selected as a Teaching Assistant for Programming Methodology (4.9/5.0 student rating), and joined the NUS Overseas Colleges Programme in Indonesia to develop entrepreneurial experience."
+      "Focus Area: Artificial Intelligence (Certificate of Distinction), Parallel Computing",
+      "Leadership: Director of Software Development at NUS Fintech Society AY25/26; providing technical leadership",
+      "Teaching: Teaching Assistant for Programming Methodology I, outstanding feedback rating of 4.9/5.0 (Mean: 4.2)",
+      "Entrepreneurship: NUS Overseas Colleges Indonesia AY23/24 Special Term",
+      "Relevant Coursework: Artificial Intelligence (A+), Data Structures & Algorithms (A), Software Engineering (A)"
     ]
   },
   // {
@@ -37,10 +39,10 @@ const educations: EducationType[] = [
     institution: "NUS Overseas Colleges (Indonesia)",
     degree: "Entrepreneurship Programme",
     gpa: "",
-    duration: "May 2024 – Aug 2024",
+    duration: "AY23/24 Special Term",
     image: "/images/noc.jpg", 
     description: [
-      "Immersed in Indonesia’s startup ecosystem while interning full-time and attending entrepreneurship workshops.",
+      "Immersed in Indonesia's startup ecosystem while interning full-time and attending entrepreneurship workshops.",
       "Explored product-market fit, go-to-market strategies, and startup ideation in collaboration with local founders and mentors."
     ]
   }

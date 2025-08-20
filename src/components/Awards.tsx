@@ -9,34 +9,46 @@ type Award = {
 
 const awards: Award[] = [
   {
+    title: "Singapore National AI Student Challenge",
+    subtitle: "3rd Place",
+    description: "Demonstrated excellence in AI innovation and application development in national competition.",
+    image: "/images/aisingapore.png"
+  },
+  {
     title: "2nd Place at NUS STePS 26",
     subtitle: "School of Computing Term Project Showcase",
     description: "Awarded 2nd place for project presentation at NUS STePS 26 among peers and industry professionals.",
     image: "/images/stepscert.png"
   },
   {
-    title: "Deans List AY 23/24 Semester 2",
-    subtitle: "NUS School of Computing",
-    description: "Awarded for achieving a perfect GPA of 5.0/5.0 for the semester.",
-    image: "/images/deanslist.png"
-  },
-  {
-    title: "IMDA SG Digital Young Leader",
-    subtitle: "IMDA Singapore",
-    description: "Recognized as a promising tech talent under Singapore’s national digital initiative.",
-    image: "/images/imda.jpg"
-  },
-  {
     title: "AWS Build-On ASEAN Hackathon",
-    subtitle: "First Runner Up",
+    subtitle: "2nd Place",
     description: "Built a full-stack application for sustainability and won 2nd place in a regional hackathon.",
     image: "/images/aws.png"
   },
   {
+    title: "IMDA SG Digital Young Leader",
+    subtitle: "IMDA Singapore",
+    description: "Recognized as a promising tech talent under Singapore's national digital initiative.",
+    image: "/images/imda.jpg"
+  },
+  {
+    title: "Dean's List AY 24/25 Semester 2 & AY 23/24 Semester 2",
+    subtitle: "NUS School of Computing",
+    description: "Awarded for achieving excellent academic performance across multiple semesters.",
+    image: "/images/deanslist.png"
+  },
+  {
     title: "Olympiad Achievements (Bronze Medalist)",
     subtitle: "Mathematics, Physics, Chemistry",
-    description: "Won Bronze medals in all three national science olympiads.",
+    description: "Won Bronze medals in all three national science olympiads demonstrating strong foundation across STEM disciplines.",
     image: "/images/olympiads.png"
+  },
+  {
+    title: "NUS ASEAN Undergraduate Merit Scholarship",
+    subtitle: "National University of Singapore",
+    description: "Awarded merit scholarship recognizing academic excellence and leadership potential.",
+    image: "/images/deanslist.png"
   }
 ]
 

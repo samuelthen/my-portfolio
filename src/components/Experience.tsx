@@ -9,7 +9,9 @@ const experiences: ExperienceType[] = [
     location: "Singapore",
     duration: "May 2025 - Aug 2025",
     description: [
-      "Ongoing"
+      "Architected enterprise document migration pipeline processing 75,000+ legacy files with 98% performance improvement (30 min → 30 sec per file) through Microsoft XML reverse-engineering and Bash scripting",
+      "Built cloud-native microservices infrastructure on AWS using Terraform IaC, ECS containerization, VPC networking, and zero-trust security architecture for production-grade scalability",
+      "Engineered cross-platform data intelligence system with automated pipelines implementing authentication handling, anti-scraping countermeasures, and LLM-powered sentiment analysis via Model Context Protocol for executive strategic insights"
     ],
     image: "/images/cpf.png"
   },
@@ -19,29 +21,30 @@ const experiences: ExperienceType[] = [
     location: "Bandung, Indonesia",
     duration: "May 2024 - Aug 2024",
     description: [
-      "Developed custom web vulnerability scanning tools and implemented 50 scan rules; improved penetration testing tool development efficiency by 150%",
-      "Collaborated with Indonesian interns, researching and architecting in-house Cyber Threat Intelligence tools; accelerated launch timeline by 3 months"
+      "Engineered a Python-based web vulnerability scanner with 50+ custom detection rules (e.g., SQL Injection, XSS, CSRF), enhanced penetration testing throughput by 50% and enabling faster triage of web application flaws",
+      "Spearheaded development of internal Cyber Threat Intelligence (CTI) tooling, accelerating launch by 3 months"
     ],
     image: "/images/cyberarmy.jpeg"
   },
   {
-    title: "Software Engineer Intern",
+    title: "Software Engineer Intern (AI)",
     company: "NUS Smart Systems Institute",
     location: "Singapore",
     duration: "Jan 2024 - Apr 2024",
     description: [
-      "Collaborated with NUS student interns, integrating computer vision and large language models (LLM) into smart glasses systems; improved user feedback rating by 30%"
+      "Integrated YOLOv8 computer vision model into smart glasses for real-time detection, augmenting contextual awareness",
+      "Incorporated OpenAI's large language models (LLMs) to deliver contextual assistance; improved decision support UX by 30%"
     ],
     image: "/images/ssi.jpeg"
   },
   {
     title: "Software Engineer Intern",
     company: "Rajang Digital Solutions",
-    location: "Kuching, Malaysia",
+    location: "Kuching, Sarawak",
     duration: "Apr 2023 - Jul 2023",
     description: [
-      "Deployed named entity recognition in information extraction workflow; enhanced system accuracy by 30%",
-      "Engineered an automation pipeline for document processing and translation for financial documents; enhanced client's satisfaction by 50%"
+      "Fine-tuned SpaCy named entity recognition (NER) model for automated financial data extraction; boosted precision by 30%",
+      "Developed full-stack pipelines for financial document parsing and bilingual translation, cutting manual processing time by 50%"
     ],
     image: "/images/rajang.jpeg"
   }

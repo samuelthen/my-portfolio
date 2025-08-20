@@ -3,23 +3,23 @@ import type { Skill } from '@/types'
 const skills: Skill[] = [
   {
     category: "Programming Languages",
-    items: ["Python", "Java", "JavaScript", "TypeScript"]
+    items: ["Python", "Java", "JavaScript", "TypeScript (Expert)", "C (Proficient)"]
   },
   {
     category: "AI & ML",
-    items: ["LLM (OpenAI & Claude)", "TensorFlow", "PyTorch", "OpenCV", "SpaCy", "YOLO", "MLOps"]
+    items: ["PyTorch", "TensorFlow", "OpenAI GPT", "Claude", "YOLO", "OpenCV", "SpaCy", "MLOps"]
   },
   {
-    category: "Web Frameworks",
-    items: ["Node.js", "React.js", "Next.js", "FastAPI"]
+    category: "Cloud & DevOps",
+    items: ["AWS", "Azure", "Terraform", "CI/CD pipelines"]
   },
   {
-    category: "Cloud & Automation",
-    items: ["AWS Cloud Foundations", "Workato Automation Pro"]
+    category: "Web & Backend",
+    items: ["Node.js", "FastAPI", "React.js", "Next.js", "PostgreSQL", "Redis"]
   },
   {
     category: "Languages",
-    items: ["English & Chinese (Native)", "Malay & Indonesian"]
+    items: ["English, Chinese (Native)", "Malay, Indonesian (Conversational)"]
   }
 ]
 
