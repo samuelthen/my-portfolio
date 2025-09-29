@@ -7,6 +7,7 @@ import Experience from '@/components/Experience'
 import Projects from '@/components/Projects'
 import Skills from '@/components/Skills'
 import Awards from '@/components/Awards'
+import HighSchool from '@/components/HighSchool'
 import Leadership from '@/components/Leadership'
 
 export default function Home() {
@@ -40,6 +41,7 @@ export default function Home() {
         <Skills />
         <Leadership />
         <Awards />
+        <HighSchool />
       </main>
     </>
   )

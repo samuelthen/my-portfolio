@@ -39,12 +39,6 @@ const awards: Award[] = [
     image: "/images/deanslist.png"
   },
   {
-    title: "Olympiad Achievements (Bronze Medalist)",
-    subtitle: "Mathematics, Physics, Chemistry",
-    description: "Won Bronze medals in all three national science olympiads demonstrating strong foundation across STEM disciplines.",
-    image: "/images/olympiads.png"
-  },
-  {
     title: "NUS ASEAN Undergraduate Merit Scholarship",
     subtitle: "National University of Singapore",
     description: "Awarded merit scholarship recognizing academic excellence and leadership potential.",
