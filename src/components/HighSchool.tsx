@@ -26,7 +26,7 @@ const highSchoolAchievements: HighSchoolAchievement[] = [
     duration: "Jun 2021 - Feb 2022",
     description: [
       "Developed image-based dietary monitoring system using deep learning and computer vision techniques",
-      "Created CNN model for 5 food classes with 76.6% accuracy using TensorFlow",
+      "Created CNN model to identify food classes using TensorFlow and use OpenCV for volume estimation",
       "Mentored by Dr Chua Dingjuan (NUS)"
     ],
     image: "/images/nus.png"
