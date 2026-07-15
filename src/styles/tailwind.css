@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #ffffff;
+  color: #0f172a;
+}
+
+section[id] {
+  scroll-margin-top: 5rem;
+}
+
+.hero-signal::before {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  content: '';
+  background:
+    radial-gradient(34rem circle at var(--signal-x, 62%) var(--signal-y, 42%), rgba(79, 70, 229, 0.28), transparent 62%),
+    linear-gradient(rgba(255,255,255,0.035) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,0.035) 1px, transparent 1px);
+  background-size: auto, 3rem 3rem, 3rem 3rem;
+  transition: background-position 120ms ease-out;
+}
+
+
+::selection {
+  background: #c4b5fd;
+  color: #1e1b4b;
+}

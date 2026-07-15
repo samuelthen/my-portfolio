@@ -1,22 +1,40 @@
+import Image from 'next/image'
+
 export default function About() {
-    return (
-      <section id = "about" className="py-20 bg-gray-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center">
-            <h2 className="text-3xl font-extrabold text-gray-900 sm:text-4xl">
-              About Me
-            </h2>
-            <p className="mt-4 max-w-2xl mx-auto text-lg text-gray-500">
-              What gets me up in the morning isn&apos;t a love for tech slogans - it&apos;s the work itself. 
-              I like hard problems, systems that break, models that don&apos;t converge, edge cases that don&apos;t behave. 
-              I like understanding things properly and building things that don&apos;t fall apart.
-            </p>
-            <p className="mt-4 max-w-2xl mx-auto text-lg text-gray-500">
-              Whether it's tuning a model, writing a cleaner abstraction, or debugging something for hours - I enjoy the process. 
-              It's not about chasing perfection, it's about getting sharper every day. That&apos;s what keeps me going.
-            </p>
+  return (
+    <section id="about" className="bg-[#090909] py-24 text-[#f5f2e8] sm:py-32">
+      <div className="mx-auto max-w-6xl px-5 sm:px-8">
+        <div className="grid gap-12 lg:grid-cols-[0.72fr_1.28fr] lg:gap-20">
+          <div className="relative aspect-[4/5] max-w-sm overflow-hidden rounded-sm bg-white/5">
+            <Image src="/images/profile.jpeg" alt="Samuel Then" fill className="object-cover grayscale transition duration-700 hover:grayscale-0" />
+          </div>
+
+          <div className="flex flex-col justify-between">
+            <div>
+              <p className="text-xs uppercase tracking-[0.2em] text-indigo-300">Outside the line items</p>
+              <h2 className="mt-5 max-w-3xl text-4xl font-semibold leading-tight tracking-[-0.045em] sm:text-5xl">
+                I like problems that look quiet until you learn how to listen.
+              </h2>
+            </div>
+
+            <div className="mt-12 grid gap-8 border-t border-white/15 pt-8 sm:grid-cols-2">
+              <p className="text-base leading-7 text-white/60">
+                Sarawak is home; Singapore is where I study and build. Moving between both has made me comfortable with different assumptions, different kinds of ambition, and the useful friction between them.
+              </p>
+              <p className="text-base leading-7 text-white/60">
+                Away from a screen, I have spent time teaching first-year programmers, running golf events, and building a table-tennis community. I am usually happiest when something difficult becomes clear enough to share.
+              </p>
+            </div>
+
+            <div className="mt-12 flex flex-wrap gap-x-8 gap-y-3 text-sm text-white/45">
+              <span>Kuching → Singapore</span>
+              <span>Research → systems</span>
+              <span>Golf → table tennis</span>
+              <a href="mailto:samuel.then@u.nus.edu" className="text-white underline decoration-indigo-400 underline-offset-4">Start a conversation</a>
+            </div>
           </div>
         </div>
-      </section>
-    )
-  }
+      </div>
+    </section>
+  )
+}

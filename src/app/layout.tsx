@@ -1,4 +1,4 @@
-import type { Metadata } from 'next'
+import type { Metadata, Viewport } from 'next'
 import { Inter } from 'next/font/google'
 import '@/styles/globals.css'
 import Navbar from '@/components/Navbar'
@@ -15,18 +15,24 @@ const inter = Inter({
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: {
-    default: 'Samuel Then | Software Engineer & Computer Science Student',
+    default: 'Samuel Then | AI Researcher & Software Engineer',
     template: '%s | Samuel Then',
   },
   description:
-    'Portfolio of Samuel Then, an NUS Computer Science student building reliable software systems and intelligent tools.',
+    'Online CV of Samuel Then, an NUS Computer Science student and AI researcher working on multimodal learning, computational imaging, foundation models, and software systems.',
   keywords: [
     'Samuel Then',
     'software engineer',
-    'full stack developer',
+    'AI researcher',
+    'machine learning engineer',
     'computer science student',
     'NUS',
-    'artificial intelligence',
+    'National University of Singapore',
+    'multimodal learning',
+    'computational imaging',
+    'computer vision',
+    'natural language processing',
+    'foundation models',
   ],
   authors: [{ name: 'Samuel Then', url: siteUrl }],
   creator: 'Samuel Then',
@@ -38,24 +44,24 @@ export const metadata: Metadata = {
     locale: 'en_SG',
     url: '/',
     siteName: 'Samuel Then',
-    title: 'Samuel Then | Software Engineer & Computer Science Student',
+    title: 'Samuel Then | AI Researcher & Software Engineer',
     description:
-      'Explore Samuel Then’s software engineering projects, experience, and work in AI, data, and systems.',
+      'NUS Computer Science student working on multimodal learning, computational imaging, foundation models, and software systems.',
     images: [
       {
-        url: '/images/profile.jpeg',
-        width: 1280,
-        height: 1280,
-        alt: 'Samuel Then',
+        url: '/og.png',
+        width: 1731,
+        height: 909,
+        alt: 'Samuel Then — AI Research and Software Engineering',
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Samuel Then | Software Engineer & Computer Science Student',
+    title: 'Samuel Then | AI Researcher & Software Engineer',
     description:
-      'Explore Samuel Then’s software engineering projects, experience, and work in AI, data, and systems.',
-    images: ['/images/profile.jpeg'],
+      'NUS Computer Science student working on multimodal learning, computational imaging, foundation models, and software systems.',
+    images: ['/og.png'],
   },
   robots: {
     index: true,
@@ -68,8 +74,12 @@ export const metadata: Metadata = {
       'max-video-preview': -1,
     },
   },
-  viewport: 'width=device-width, initial-scale=1',
-  themeColor: '#ffffff',
+}
+
+export const viewport: Viewport = {
+  width: 'device-width',
+  initialScale: 1,
+  themeColor: '#f7f7f5',
 }
 
 export default function RootLayout({
@@ -81,7 +91,7 @@ export default function RootLayout({
     <html lang="en" className={inter.variable}>
       <body className="min-h-screen flex flex-col">
         <Navbar />
-        <main className="flex-grow pt-16">
+        <main className="flex-grow">
           {children}
         </main>
         <Footer />

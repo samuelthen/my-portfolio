@@ -11,6 +11,26 @@ type LeadershipExperience = {
 
 const leadershipRoles: LeadershipExperience[] = [
   {
+    title: "Director of Software Development",
+    company: "NUS Fintech Society",
+    location: "Singapore",
+    duration: "AY25/26",
+    description: [
+      "Provided technical leadership for software development initiatives within the society."
+    ],
+    image: "/images/nus_fintech.jpeg"
+  },
+  {
+    title: "Product Associate",
+    company: "Google Developer Group",
+    location: "Singapore",
+    duration: "AY25/26",
+    description: [
+      "Contributed to product development and community engagement initiatives."
+    ],
+    image: "/images/gdg2.png"
+  },
+  {
     title: "Event Director",
     company: "NUS Golf Club",
     location: "Singapore",

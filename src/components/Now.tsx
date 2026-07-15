@@ -11,51 +11,15 @@ type CurrentActivity = {
 
 const currentActivities: CurrentActivity[] = [
   {
-    title: "Student Exchange Programme",
-    organization: "University of Washington (UW), Seattle",
-    location: "Seattle, USA",
-    duration: "Sep 2025 – Dec 2025",
-    description: [
-      "Currently pursuing exchange studies at UW's Paul G. Allen School of Computer Science & Engineering",
-      "Taking 4 modules: CSE 461 (Intro Computer Networks), CSE 344 (Intro Data Management), MATH 407 (Linear Optimization), and STAT 491 (Intro Stochastic Processes)",
-      "Gaining exposure to advanced computer science concepts in a U.S. research-intensive environment"
-    ],
-    image: "/images/uw.png"
-  },
-  {
-    title: "Research Assistant",
-    organization: "Prof. Simon Shaolei Du's Lab",
-    location: "University of Washington",
-    duration: "Sep 2025 – Present",
-    description: [
-      "Working under Prof. Simon Shaolei Du, Associate Professor in the Paul G. Allen School of Computer Science & Engineering",
-      "Contributing to research on multimodal models, combining vision, language, and other modalities",
-      "Collaborating with graduate students and faculty on cutting-edge AI research projects"
-    ],
-    image: "/images/uw.png"
-  },
-  {
-    title: "Director of Software Development",
-    organization: "NUS Fintech Society",
+    title: "AI Research Student",
+    organization: "WING NLP Lab @ NUS",
     location: "Singapore",
-    duration: "AY25/26",
+    duration: "Jul 2026 - Present",
     description: [
-      "Providing technical leadership for software development initiatives within the society",
-      "Leading development teams and managing technical projects to advance fintech innovation at NUS"
+      "Working with Prof. Min-Yen Kan on test-time scaling methods for foundation models.",
+      "Exploring inference-time self-improvement and iterative refinement."
     ],
-    image: "/images/nus_fintech.jpeg"
-  },
-  {
-    title: "Product Associate",
-    organization: "Google Developer Group at NUS",
-    location: "Singapore",
-    duration: "Present",
-    description: [
-      "Contributing to product development and community engagement initiatives",
-      "Organizing technical workshops and events for the developer community",
-      "Supporting Google's developer ecosystem at NUS through various programs and activities"
-    ],
-    image: "/images/gdg2.png"
+    image: "/images/nus.png"
   }
 ]
 

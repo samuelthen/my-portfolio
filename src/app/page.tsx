@@ -1,13 +1,4 @@
-import Hero from '@/components/Hero'
-import About from '@/components/About'
-import Education from '@/components/Education'
-import Now from '@/components/Now'
-import Experience from '@/components/Experience'
-import Projects from '@/components/Projects'
-import Skills from '@/components/Skills'
-import Awards from '@/components/Awards'
-import HighSchool from '@/components/HighSchool'
-import Leadership from '@/components/Leadership'
+import OnlineCV from '@/components/OnlineCV'
 
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? 'https://samuel-then-portfolio.netlify.app'
 
@@ -23,33 +14,31 @@ export default function Home() {
             name: 'Samuel Then',
             url: siteUrl,
             image: `${siteUrl}/images/profile.jpeg`,
-            jobTitle: 'Software Engineer',
+            jobTitle: 'AI Researcher and Software Engineer',
             description:
-              'NUS Computer Science student building reliable software systems and intelligent tools.',
-            alumniOf: {
+              'NUS Computer Science student working on multimodal learning, computational imaging, foundation models, and software systems.',
+            affiliation: {
               '@type': 'CollegeOrUniversity',
               name: 'National University of Singapore',
             },
+            knowsAbout: [
+              'Artificial Intelligence',
+              'Machine Learning',
+              'Computer Vision',
+              'Natural Language Processing',
+              'Multimodal Learning',
+              'Computational Imaging',
+              'Software Engineering',
+            ],
             sameAs: [
               'https://github.com/samuelthen',
-              'https://www.linkedin.com/in/samuel-shi-jie-then-7a18a1214',
+              'https://www.linkedin.com/in/samuelthen/',
             ],
           }),
         }}
       />
 
-      <div>
-        <Hero />
-        <About />
-        <Education />
-        <Now />
-        <Experience />
-        <Projects />
-        <Skills />
-        <Leadership />
-        <Awards />
-        <HighSchool />
-      </div>
+      <OnlineCV />
     </>
   )
 }

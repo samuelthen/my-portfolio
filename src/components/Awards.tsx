@@ -27,15 +27,9 @@ const awards: Award[] = [
     image: "/images/aws.png"
   },
   {
-    title: "IMDA SG Digital Young Leader",
-    subtitle: "IMDA Singapore",
-    description: "Recognized as a promising tech talent under Singapore's national digital initiative.",
-    image: "/images/imda.jpg"
-  },
-  {
-    title: "Dean's List AY 24/25 Semester 2 & AY 23/24 Semester 2",
+    title: "NUS Dean's List",
     subtitle: "NUS School of Computing",
-    description: "Awarded for achieving excellent academic performance across multiple semesters.",
+    description: "Dean's List recipient for AY23/24 Semester 2, AY24/25 Semester 2, and AY25/26 Semester 1.",
     image: "/images/deanslist.png"
   },
   {
