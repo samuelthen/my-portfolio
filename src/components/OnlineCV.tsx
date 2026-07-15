@@ -163,7 +163,7 @@ const recognition = [
   {
     title: 'NUS STePS 26',
     result: '2nd Place',
-    image: '/images/stepscert.png',
+    image: '/images/nus.png',
   },
   {
     title: 'AWS Build On ASEAN',
@@ -173,12 +173,12 @@ const recognition = [
   {
     title: 'NUS Dean’s List',
     result: 'Three semesters',
-    image: '/images/deanslist.png',
+    image: '/images/nus.png',
   },
   {
     title: 'NUS ASEAN Undergraduate Merit Scholarship',
     result: 'Merit scholarship',
-    image: '/images/deanslist.png',
+    image: '/images/nus.png',
   },
   {
     title: 'Singapore Mathematical Olympiad',
