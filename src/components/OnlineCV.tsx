@@ -65,7 +65,7 @@ const experience = [
     role: 'Backend Engineer Intern',
     organization: 'Rajang Digital Solutions',
     location: 'Kuching, Malaysia',
-    image: '/images/rajang.png',
+    image: '/images/rajang-logo.png',
     bullets: [
       'Deployed named-entity recognition in an information-extraction workflow, improving system accuracy by 30%.',
       'Engineered document-processing and translation automation for financial documents, improving client satisfaction by 50%.',
@@ -183,17 +183,17 @@ const recognition = [
   {
     title: 'Singapore Mathematical Olympiad',
     result: 'Bronze Award',
-    image: '/images/olympiads.png',
+    image: '/images/singapore-flag.png',
   },
   {
     title: 'Singapore Physics Olympiad',
     result: 'Bronze Award',
-    image: '/images/olympiads.png',
+    image: '/images/singapore-flag.png',
   },
   {
     title: 'Singapore Chemistry Olympiad',
     result: 'Bronze Award',
-    image: '/images/olympiads.png',
+    image: '/images/singapore-flag.png',
   },
 ]
 
@@ -242,9 +242,7 @@ export default function OnlineCV() {
                           alt=""
                           fill
                           sizes="48px"
-                          className={item.organization.includes('Rajang')
-                            ? 'object-cover'
-                            : `object-contain ${item.organization.includes('Sony') ? 'p-1.5' : 'p-1'}`}
+                          className={`object-contain ${item.organization.includes('Sony') ? 'p-1.5' : 'p-1'}`}
                         />
                       ) : (
                         <span className="text-[0.65rem] font-bold tracking-[0.08em] text-slate-500">RDS</span>
@@ -288,7 +286,13 @@ export default function OnlineCV() {
               {recognition.map((item) => (
                 <article key={item.title} className="grid grid-cols-[2.75rem_1fr] gap-4 border-b border-slate-200 py-4">
                   <div className="relative h-11 w-11 overflow-hidden border border-slate-200 bg-white">
-                    <Image src={item.image} alt="" fill sizes="44px" className="object-contain p-1" />
+                    <Image
+                      src={item.image}
+                      alt=""
+                      fill
+                      sizes="44px"
+                      className={item.image.includes('singapore-flag') ? 'object-cover' : 'object-contain p-1'}
+                    />
                   </div>
                   <div>
                     <h3 className="text-sm font-medium text-slate-950">{item.title}</h3>
