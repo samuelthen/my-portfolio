@@ -65,7 +65,7 @@ const experience = [
     role: 'Backend Engineer Intern',
     organization: 'Rajang Digital Solutions',
     location: 'Kuching, Malaysia',
-    image: '',
+    image: '/images/rajang.png',
     bullets: [
       'Deployed named-entity recognition in an information-extraction workflow, improving system accuracy by 30%.',
       'Engineered document-processing and translation automation for financial documents, improving client satisfaction by 50%.',
@@ -180,6 +180,21 @@ const recognition = [
     result: 'Merit scholarship',
     image: '/images/deanslist.png',
   },
+  {
+    title: 'Singapore Mathematical Olympiad',
+    result: 'Bronze Award',
+    image: '/images/olympiads.png',
+  },
+  {
+    title: 'Singapore Physics Olympiad',
+    result: 'Bronze Award',
+    image: '/images/olympiads.png',
+  },
+  {
+    title: 'Singapore Chemistry Olympiad',
+    result: 'Bronze Award',
+    image: '/images/olympiads.png',
+  },
 ]
 
 function SectionTitle({ children }: { children: React.ReactNode }) {
@@ -227,7 +242,9 @@ export default function OnlineCV() {
                           alt=""
                           fill
                           sizes="48px"
-                          className={`object-contain ${item.organization.includes('Sony') ? 'p-1.5' : 'p-1'}`}
+                          className={item.organization.includes('Rajang')
+                            ? 'object-cover'
+                            : `object-contain ${item.organization.includes('Sony') ? 'p-1.5' : 'p-1'}`}
                         />
                       ) : (
                         <span className="text-[0.65rem] font-bold tracking-[0.08em] text-slate-500">RDS</span>
