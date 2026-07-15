@@ -1,5 +1,12 @@
 import React from 'react';
 import Image from 'next/image';
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Blog',
+  description: 'Updates from Samuel Then on software engineering, technology, and university life.',
+  alternates: { canonical: '/blog/' },
+};
 
 type BlogPost = {
   id: string;
@@ -75,9 +82,9 @@ export default function BlogPage() {
     <section id="blogs" className="py-20 bg-white">
       <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center">
-          <h2 className="text-3xl font-extrabold text-gray-900 sm:text-4xl">
+          <h1 className="text-3xl font-extrabold text-gray-900 sm:text-4xl">
             Blog
-          </h2>
+          </h1>
           <p className="mt-2 text-sm text-gray-500">Sharing my journey in tech</p>
         </div>
         <div className="max-w-md mx-auto px-2 sm:px-4">
